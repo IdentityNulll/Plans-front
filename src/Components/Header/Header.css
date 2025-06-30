@@ -1,0 +1,48 @@
+.header-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+
+input,
+button {
+    background: none;
+    outline: none;
+    border: none;
+    color: #ccc;
+}
+
+input::placeholder {
+    color: #ccc;
+    font-size: 16px;
+}
+
+.task, .time {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 10px 25px 10px 10px; 
+    border-radius: 8px;
+}
+
+.add {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 10px 25px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.line {
+    width: 90%;
+    height: 1px;
+    background-color: #ccc;
+    margin: 0 auto;
+}

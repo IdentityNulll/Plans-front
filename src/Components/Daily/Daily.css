@@ -1,0 +1,37 @@
+.daily-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.daily-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.task-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  align-items: center;
+  border-bottom: 1px dashed #ddd;
+}
+
+.status-cell {
+  width: 80px;
+  text-align: center;
+}
+
+.choice-buttons button {
+  margin: 0 4px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.final {
+  font-size: 20px;
+}
