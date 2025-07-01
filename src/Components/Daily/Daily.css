@@ -1,37 +1,137 @@
 .daily-container {
   max-width: 600px;
-  margin: 0 auto;
-  padding: 1rem;
+  margin: 2rem auto;
+  padding: 2rem;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.08), 0 1.5px 4px rgba(0,0,0,0.04);
+  font-family: 'Segoe UI', Arial, sans-serif;
 }
 
-.daily-header {
-  display: flex;
-  justify-content: space-between;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-  padding: 0.5rem 0;
-  border-bottom: 1px solid #ccc;
+  .daily-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 2px solid #f0f0f0;
+    font-size: 1.2rem;
+    color: #222;
+  }
+
+.daily-header span {
+  color: #888;
+  padding: 6px 10px;
+  border-radius: 6px;
+  font-size: 1.1rem;
+  transition: background 0.2s, color 0.2s;
+  cursor: pointer;
+  background: transparent;
+}
+.daily-header span:hover {
+  background: #f5f5f5;
+  color: #222;
 }
 
 .task-row {
   display: flex;
   justify-content: space-between;
-  padding: 0.5rem 0;
   align-items: center;
-  border-bottom: 1px dashed #ddd;
+  padding: 1rem 0;
+  border-bottom: 1px solid #f0f0f0;
+  transition: background 0.2s;
+}
+.task-row:last-child {
+  border-bottom: none;
+}
+.task-row:hover {
+  background: #fafbfc;
 }
 
 .status-cell {
-  width: 80px;
+  width: 90px;
   text-align: center;
+  font-size: 1rem;
+  color: #666;
+}
+
+.choice-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
 }
 
 .choice-buttons button {
   margin: 0 4px;
-  font-size: 18px;
+  font-size: 1.1rem;
   cursor: pointer;
+  border: none;
+  background: #f0f0f0;
+  color: #444;
+  border-radius: 5px;
+  padding: 6px 10px;
+  transition: background 0.2s, color 0.2s;
+}
+.choice-buttons button:hover {
+  background: #222;
+  color: #fff;
 }
 
-.final {
-  font-size: 20px;
+.final-choice {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.2rem;
+}
+
+.tick {
+  font-size: 22px;
+  color: #fff;
+  background: linear-gradient(90deg, #4caf50 60%, #43a047 100%);
+  padding: 4px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(76,175,80,0.08);
+}
+
+.x {
+  font-size: 22px;
+  color: #fff;
+  background: linear-gradient(90deg, #f44336 60%, #d32f2f 100%);
+  padding: 4px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(244,67,54,0.08);
+}
+
+.delete {
+  color: #fff;
+  background: linear-gradient(90deg, #f44336 60%, #d32f2f 100%);
+  padding: 4px;
+  font-size: 22px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.delete:hover {
+  background: linear-gradient(90deg, #d32f2f 60%, #b71c1c 100%);
+}
+.task-output, .time-output {
+  color: #333;
+  font-size: 22px;
+}
+.restart {
+  color: #fff;
+  background: linear-gradient(90deg, #2196f3 60%, #1976d2 100%);
+  padding: 4px;
+  font-size: 24px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(33,150,243,0.08);
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+.restart:hover {
+  background: linear-gradient(90deg, #1976d2 60%, #0d47a1 100%);
 }
