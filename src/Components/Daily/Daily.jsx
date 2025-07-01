@@ -46,7 +46,7 @@ function Daily() {
 
           {groupedLogs[date].map((log) => (
             <div key={log.index} className="task-row">
-              <span className="task-output">{log.task}</span>
+              <span className="task-output">{log.task.length > 20 ? log.task.slice(0,10) + " ..." : log.task}</span>
               <span className="time-output">{log.time}</span>
               <div className="status-cell">
                 {log.status === "" ? (
